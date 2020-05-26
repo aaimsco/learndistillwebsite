@@ -1,0 +1,30 @@
+name: "learndistillwebsite"
+title: "My Website"
+description: |
+  My Website
+output_dir: "."
+google_analytics: "UA-98890761-11"
+
+base_url: https://aaims.co
+repository_url: https://github.com/aaimsco/rpubs
+creative_commons: CC BY
+twitter:
+  site: "@dcicantab51"
+navbar:
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
+    - text: "Publish"
+      menu:
+        - text: "Publishing Articles"
+          href: publish_article.html
+        - text: "Publishing a Website"
+          href: publish_website.html
+        - text: "---"
+        - text: "Article Metadata"
+          href: metadata.html
+    - icon: fab fa-github
+      href: https://github.com/aaimsco/rpubs
+output: distill::distill_article
